@@ -6,22 +6,21 @@
 dotnet new webapi -o TodoApi
 dotnet add package Microsoft.EntityFrameworkCore.InMemory
 ```
-
-    - Simulates the behavior of an in-memory SQL database in the application. In other words, it is a temporary database that is stored in the RAM of the application while it is running.
+- Simulates the behavior of an in-memory SQL database in the application. In other words, it is a temporary database that is stored in the RAM of the application while it is running.
 
 ```
 dotnet dev-certs https --trust
 ```
 
-    - Generates a self-signed certificate if one does not already exist.
-
-    - Adds the certificate to the system certificate store and establishes trust on the certificate so that browsers and clients trust it when establishing an HTTPS connection.
-
-    This is especially useful during development as it avoids security issues related to self-signed certificates and ensures that the HTTPS connection works smoothly in the local development environment.
+- Generates a self-signed certificate if one does not already exist.
+- Adds the certificate to the system certificate store and establishes trust on the certificate so that browsers and clients trust it when establishing an HTTPS connection.
+    - This is especially useful during development as it avoids security issues related to self-signed certificates and ensures that the HTTPS connection works smoothly in the local development environment.
 
 ```
 dotnet run --launch-profile https
+```
 if do not want to use https, then execute:
+```
 dotnet run
 ```
 
